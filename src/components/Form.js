@@ -3,7 +3,6 @@ import DisplayData from "./src/components/displayData.js";
 
 class Form extends React.Component {
 
-
   render() {
     return (
       <form>
