@@ -1,4 +1,5 @@
 import React from 'react';
+import DisplayData from "./src/components/displayData.js";
 
 class Form extends React.Component {
   state = {
@@ -17,10 +18,15 @@ class Form extends React.Component {
       lastName: event.target.value
     })
   }
+  
 
   render() {
     return (
-      <form>
+      <form formData={this.state}
+          handleFirstNameChange={this.handleFirstNameChange}
+          handleLastNameChange={this.handleLastNameChange}
+        >
+        <DisplayData formData={this.state} />
         <input type="text" name="firstName" onChange={event => this.handleFirstNameChange(event)} value={this.state.firstName} />
         <input type="text" name="lastName" onChange={event => this.handleLastNameChange(event)} value={this.state.lastName} />
       </form>
