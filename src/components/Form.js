@@ -1,5 +1,5 @@
 import React from 'react';
-import DisplayData from "./src/components/displayData.js";
+import DisplayData from "./displayData.js";
 
 class Form extends React.Component {
 
