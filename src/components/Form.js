@@ -23,8 +23,6 @@ class Form extends React.Component {
   render() {
     return (
       <form formData={this.state}
-          handleFirstNameChange={this.handleFirstNameChange}
-          handleLastNameChange={this.handleLastNameChange}
         >
         <DisplayData formData={this.state} />
         <input type="text" name="firstName" onChange={event => this.handleFirstNameChange(event)} value={this.state.firstName} />
